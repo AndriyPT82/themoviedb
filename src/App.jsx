@@ -86,13 +86,12 @@ function App() {
 
   const cartGoodsIds = cart.map(obj => obj.id)
 
-
-  console.log(chosenMovie);
   return (
     <AppContext.Provider value={{
       handleNavigation,
       setChosenMovie,
       ...chosenMovie,
+      chosenMovie,
       handleChosenMovieId,
       userRequest,
       setUserRequest,
