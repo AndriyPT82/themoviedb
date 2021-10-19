@@ -1,0 +1,59 @@
+.error {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.comment-form {
+  display: flex;
+  max-height: 300px;
+  gap: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255, 0.5);
+  transition: 0.5s;
+
+  &--opened {
+  }
+
+  &__textarea {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    flex-grow: 1;
+  }
+
+  &__text-field {
+    flex-grow: 1;
+    resize: none;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 15px;
+
+
+  }
+
+  &__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+  }
+
+  &__button {
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 30px;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+    &:hover {
+      // background-color: rgba(173, 173, 173, 0.5);
+    }
+  }
+}

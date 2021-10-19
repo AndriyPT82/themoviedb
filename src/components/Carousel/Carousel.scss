@@ -1,0 +1,47 @@
+.carousel {
+  position: relative;
+  display: flex;
+  gap: 20px;
+
+  &__box-items {
+    height: 100%;
+    overflow-x: scroll;
+
+
+  }
+
+  &__items {
+    display: flex;
+    gap: 5px;
+    transition: 0.7s;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+
+    & h3 {
+      position: absolute;
+      font-size: 16px;
+      text-overflow: ellipsis;
+      text-align: center;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      text-shadow: 2px 2px 5px #000000;
+    }
+
+    & img {
+      height: auto;
+      width: 140px;
+      border-radius: 5px;
+      border: 1px solid rgb(255, 255, 255);
+
+      &:hover {
+        box-sizing: border-box;
+        box-shadow: 0 0 10px black;
+      }
+    }
+  }
+}

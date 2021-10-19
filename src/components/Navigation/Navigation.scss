@@ -1,0 +1,50 @@
+$color: rgb(169, 169, 169);
+
+.navigation {
+  position: relative;
+  display: flex;
+  height: 70px;
+  // border-bottom: 1px solid black;
+  align-items: center;
+  color: $color;
+  justify-content: space-between;
+
+  & select {
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-right: 30px;
+  }
+
+  &__tags {
+    margin-left: 40px;
+    align-self: flex-end;
+    z-index: 1;
+  }
+
+  &__tag {
+    color: $color;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px 15px 0;
+    cursor: pointer;
+
+    &--active {
+      cursor: auto;
+      color: black;
+      border: 1px solid rgb(0, 0, 0);
+      border-bottom-color: white;
+      background-color: #fff;
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: rgb(84, 84, 84);
+    }
+  }
+
+  &__input-opener {
+    cursor: pointer;
+  }
+}

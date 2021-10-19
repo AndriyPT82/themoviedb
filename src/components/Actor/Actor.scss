@@ -1,0 +1,209 @@
+.actor {
+  display: flex;
+  height: 100%;
+  gap: 30px;
+  transition: 1s;
+
+  &__promo {
+
+    & img {
+      max-width: 250px;
+      width: auto;
+      border-radius: 5px;
+      border: 1px solid rgb(255, 255, 255);
+      box-shadow: 0 0 10px black;
+    }
+  }
+
+  &__short-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+
+
+  }
+
+  &__further-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    min-width: 0;
+    gap: 10px;
+
+
+
+  }
+
+  &__info {
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-top: 20px;
+
+    height: 100%;
+
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    gap: 10px;
+    flex-grow: 1;
+
+    max-height: 100%;
+    border: 1px solid rgb(255, 255, 255);
+
+  }
+
+  &__title {
+  }
+
+  &__biography{
+    max-height: 200px;
+    overflow: scroll;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(122, 122, 122);
+  }
+
+  &__genres {
+    display: flex;
+    flex-wrap: wrap;
+
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-self: center;
+      margin-left: 10px;
+      gap: 10px;
+    }
+  }
+
+  &__genre {
+    cursor: pointer;
+
+    &:hover {
+      color: grey;
+    }
+
+    &:active {
+      color: rgb(115, 150, 112);
+    }
+  }
+
+  &__comments {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 3px 7px;
+    bottom: 10px;
+    right: 10px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .actor {
+//   display: flex;
+//   height: 100%;
+//   padding-top: 20px;
+//   gap: 20px;
+
+//   &__promo{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+//     & span {
+//       font-size: 20px;
+//       text-shadow: 2px 2px 5px rgb(255, 255, 255);
+//       align-self: flex-end;
+//       margin-right: 30px;
+//     }
+
+//     & img {
+//       max-width: 250px;
+//       width: auto;
+//       border-radius: 5px;
+//       border: 1px solid rgb(255, 255, 255);
+//       box-shadow: 0 0 10px black;
+//     }
+//   }
+
+//   &__further-details {
+//     display: inline-flex;
+//     flex-direction: column;
+//     flex-grow: 1;
+//     width: 100%;
+//     min-width: 0;
+//     gap: 10px;
+
+//   }
+
+//   &__about {
+//     position: relative;
+//     display: flex;
+//     gap: 20px;
+//     flex-direction: column;
+//     flex-grow: 1;
+    
+//   }
+
+//   &__info {
+//     flex-grow: 1;
+//     display: flex;
+//     flex-direction: column;
+//     background-color: rgba(255, 255, 255, 0.5);
+//     padding: 10px;
+//     margin-top: 20px;
+//     border-radius: 5px;
+//     border-top-left-radius: 0;
+//     gap: 10px;
+//   }
+
+//   &__name {}
+
+//   &__biography {
+//     max-height: 100px;
+//     overflow: scroll;
+//   }
+// }
+
+// @media (max-width: 700px) {
+// }

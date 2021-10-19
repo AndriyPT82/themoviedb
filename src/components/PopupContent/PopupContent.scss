@@ -1,0 +1,60 @@
+.popup-content {
+  min-width: 700px;
+  max-width: 1000px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 30px 30px;
+  width: 70vw;
+  height: 64 0px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 25px black;
+  background-color: #c0c0c094;
+
+  &__tag-button {
+    top: 39px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(221, 221, 221, 0.5);
+    padding: 2px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: none;
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--movie {
+      left: 310px;
+      border-top-left-radius: 5px;
+    }
+
+    &--actor {
+      left: 378px;
+      border-top-right-radius: 5px;
+    }
+
+    &--active {
+      border-color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgb(189, 189, 189);
+    }
+  }
+
+  &--closer {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 10px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+

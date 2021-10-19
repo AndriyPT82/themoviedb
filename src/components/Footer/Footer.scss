@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: end;
+  padding: 0 70px 20px 0;
+  height: 300px;
+  font-size: 40px;
+  background-image: url('https://epipoca.com.br/wp-content/uploads/2021/06/poderoso-chefinho.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__about-author {
+    display: flex;
+    align-items: flex-end;
+    font-size: 30px;
+    gap: 20px;
+  }
+
+  &__icon {
+    margin-left: 5px;
+    & > img {
+      width: 40px;
+    }
+  }
+}

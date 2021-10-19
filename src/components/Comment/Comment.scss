@@ -1,0 +1,23 @@
+$borderColor: rgba(131, 131, 131, 0.5);
+
+.comment {
+  padding: 10px 10px 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.7);
+  border: 1px solid $borderColor;
+
+  &__text {
+    overflow: scroll;
+    max-height: 70px;
+    margin-bottom: 5px;
+  }
+
+  &__user-info {
+    padding-top: 5px;
+    border-top: 1px solid $borderColor;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    font-size: 13px;
+  }
+}
